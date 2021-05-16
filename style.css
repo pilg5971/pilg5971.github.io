@@ -119,3 +119,51 @@ body{
 .profile-content-wrapper{
     display: block;
 }
+
+/* School Page */
+
+.school-wrapper{
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.school-wrapper > header > a{
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: color 0.5s;
+}
+
+.school-wrapper > header > a:hover{
+    transition: color 0.5;
+    color: rgb(110, 109, 109);
+    font-weight: bolder;
+}
+
+.eSports-content{
+    display: flex;
+    text-align: start;
+}
+
+.eSports-content > img{
+    width: 20%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.rowing-content{
+    display: flex;
+    text-align: start;
+    margin-left: 23px;
+}
+
+.rowing-content > ul{
+    margin-left: 25px;
+}
