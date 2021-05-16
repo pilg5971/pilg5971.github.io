@@ -153,8 +153,8 @@ body{
 }
 
 .eSports-content > img{
-    width: 20%;
-    height: auto;
+    width: 226px;
+    height: 226px;
     margin-bottom: 40px;
 }
 
@@ -162,6 +162,10 @@ body{
     display: flex;
     text-align: start;
     margin-left: 23px;
+}
+
+.rowing-content > img{
+    margin-left: 5px;
 }
 
 .rowing-content > ul{
