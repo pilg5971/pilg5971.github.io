@@ -1,0 +1,127 @@
+/* -------------------------------------------------------- */
+/*                                                          */
+/*                                                          */
+/*                    [GLOBAL STYLES]                       */
+/*                                                          */
+/*                                                          */
+/* -------------------------------------------------------- */
+
+/* ------------------------- */
+/*                           */
+/*          Imports          */
+/*                           */
+/* ------------------------- */
+
+@import url(https://fonts.googleapis.com/css2?family=Sora&display=swap);
+
+/* ------------------------- */
+/*                           */
+/*       Root Variables      */
+/*                           */
+/* ------------------------- */
+
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        var(--dark-blue),
+        var(--dark-purple)
+    )
+}
+
+/* ------------------------- */
+/*                           */
+/*        Navigation         */
+/*                           */
+/* ------------------------- */
+.nav-wrapper{
+    background-image: var(--gradient);
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+}
+
+.left-side,
+.right-side{
+    display: flex;
+}
+
+.right-side{
+    align-items: center;
+}
+
+.nav-wrapper .left-side .nav-link-wrapper{
+    font-size: 0.9em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 120px;
+}
+
+.nav-link-wrapper{
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+    font-family: 'Sora', sans-serif;
+}
+
+.nav-link-wrapper a{
+    color: whitesmoke;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.5s;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid rgb(240, 236, 236);
+    background-color: var(--dark-blue);
+}
+
+.nav-link-wrapper a:hover{
+    color: rgb(240, 236, 236);
+}
+
+.brand{
+    filter: invert(100%);
+    transition: filter 0.5s;
+}
+
+.brand:hover{
+    filter: invert(50%);
+}
+
+.brand a img{
+    width: 47.5px;
+    height: 40px;
+}
+
+/* ------------------------- */
+/*                           */
+/*        Page Layout        */
+/*                           */
+/* ------------------------- */
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url("../Images/background2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Sora', sans-serif;;
+}
+
+/* ------------------------- */
+/*                           */
+/*          Footer           */
+/*                           */
+/* ------------------------- */
+
+.footer-root{
+    width: 100%;
+    height: 250px;
+    background: var(--dark-purple);
+    margin-top: 50px;
+}
