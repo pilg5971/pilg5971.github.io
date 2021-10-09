@@ -19,46 +19,172 @@
 /*      Landing Content      */
 /*                           */
 /* ------------------------- */
-
 .landing-container{
-    width: auto;
     height: 100vh;
+    width: auto;
+    margin: auto;
     display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
-.landing-text{
-    margin: 5% auto 0 auto;
+.landing-content{
+    width: fit-content;
+    height: fit-content;
+    margin: 57px auto 0 auto;
+}
+
+.landing-intro{
     padding: 40px;
     color: whitesmoke;
     text-align: center;
+    display: flex;
 }
 
-.landing-text h1{
-    width: 825px;
-    height: 194px;
+.paintbrush{
+    height: 200px;
+    width: auto;
+}
+
+.landing-intro h1{
+    height: fit-content;
+    width: fit-content;
     font-size: 80px;
-    background-image: url(../Images/path867.png);
-    background-size: 825px 194px;
-    background-repeat: no-repeat;
-    margin-bottom: 0;
+    margin: auto;
     padding-top: 55px;
 }
-.landing-text h2{
+
+.landing-details{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.landing-details h2{
+    background-image: var(--gradient);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     margin-top: -50px;
+    font-size: 40px;
+    color: var(--dark-blue);
 }
 
-.landing-text button{
+.landing-details button{
     margin: 20px auto 0 auto;
     border: none;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 22px;
     font-weight: bold;
-    height: 40px;
-    width: 120px;
+    height: 60px;
+    width: 200px;
     border-radius: 5px;
     background-color: var(--dark-blue);
     color: whitesmoke;
+    transition: all 0.2s ease-in-out;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.landing-details button:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: var(--light-blue);
+}
+
+/* ------------------------- */
+/*                           */
+/*        Intro Card         */
+/*                           */
+/* ------------------------- */
+.intro-cards{
+    display: flex;
+    align-content: center;
+    margin: auto auto 50px auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    height: fit-content;
+    width: 100%;
+}
+
+.carousel{
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel__images{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container{
+  background: lightblue;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button--left{
+  left: -40px;
+}
+
+.carousel__button--right{
+  right: -40px;
+}
+
+.carousel__button img{
+  width: 10px;
+}
+
+.carousel__nav{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator{
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide{
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden{
+  display: none;
 }
 
 /* ------------------------- */
@@ -70,7 +196,7 @@
     background-color: whitesmoke;
     display: flex;
     height: fit-content;
-    max-width: 1300px;
+    max-width: 100%;
     margin: 0 auto;
     border-radius: 5px;
 }

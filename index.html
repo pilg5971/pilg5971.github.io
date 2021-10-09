@@ -1,88 +1,145 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Trevor Pilgrim: Home</title>
-        <meta charset="utf-8">
-        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/home.css">
-        <style>
-            :root{
-                --dark-purple: #25274D;
-                --light-purple: #464866;
-                --light-gray: #AAABB8;
-                --light-blue: #2E9CCA;
-                --dark-blue: #29648A;
-            }
-        </style>
+      <title>Trevor Pilgrim: Home</title>
+      <meta charset="utf-8">
+      <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/home.css">
+      <style>
+          :root{
+              --dark-purple: #25274D;
+              --light-purple: #464866;
+              --light-gray: #AAABB8;
+              --light-blue: #2E9CCA;
+              --dark-blue: #29648A;
+              --gradient: linear-gradient(
+                  45deg,
+                  var(--dark-blue),
+                  var(--dark-purple)
+              );
+          }
+      </style>
     </head>
     <body>
 
-        <!-- Navigation -->
-        <div class="nav-wrapper">
-            <div class="right-side">
-                <div class="brand"><a href="https://github.com/pilg5971" target="_blank">
-                    <img src="./Images/GitHub-logo.png" alt="GitHub Link"></a>
-                </div>
-            </div>
-            <div class="left-side">
-                <div class="nav-link-wrapper"><a href="index.html">Home</a></div>
-                <div class="nav-link-wrapper"><a href="about.html">About</a></div>
-                <div class="nav-link-wrapper"><a href="school.html">School</a></div>
-                <div class="nav-link-wrapper"><a href="D&D.html">D&D</a></div>
-                <div class="nav-link-wrapper"><a href="graphicDesign.html">Graphic Design</a></div>
-            </div>
+      <!-- Navigation -->
+      <div class="nav-wrapper">
+        <div class="right-side">
+          <div class="brand"><a href="https://github.com/pilg5971" target="_blank">
+            <img src="./Images/GitHub-logo.png" alt="GitHub Link"></a>
+          </div>
         </div>
+        <div class="left-side">
+          <div class="nav-link-wrapper"><a href="index.html">Home</a></div>
+          <div class="nav-link-wrapper"><a href="about.html">About</a></div>
+          <div class="nav-link-wrapper"><a href="school.html">School</a></div>
+          <div class="nav-link-wrapper"><a href="projects.html">Projects</a></div>
+          <div class="nav-link-wrapper"><a href="graphicDesign.html">Graphic Design</a></div>
+        </div>
+      </div>
 
-        <!-- Page Content -->
-        <div class="landing-container">
-            <div class="landing-text">
-                <h1>Trevor Pilgrim</h1>
-                <h2>An Artistic Taste for Website Development</h2>
-                <button>Contact Me</button>
-            </div>
-        </div>
-        <div class="profile-information">
-            <div class="profile-picture">
-                <img src="./Images/Profile.png" alt="Profile Picture">
-            </div>
-            <div class="profile-text">
-                <h2>Web Developer - Graphic Designer</h2>
-                <p class=background-description>
-                    Computer Science major with a variety of skills and experience amid
-                    the web industry. My focus is in the field of web development with
-                    additional interests in UI/UX design, software development, and computer
-                    graphics. Currently I work full-time as a Software Consultant within Fishbowl
-                    Solutions.</p>
-                <div class="hobbies-contact">
-                    <ul class="hobbies-passions">
-                        <h3>Hobbies & Passions</h3>
-                        <li>Graphic Design</li>
-                        <li>Drawing</li>
-                        <li>Video Games</li>
-                        <li>Dungeon & Dragons</li>
-                    </ul>
-                    <ul class="contact-info">
-                        <h3>Contact Information</h3>
-                        <li><span>Phone Number: 630-442-4985</span></li>
-                        <li><span>Email: clank555@gmail.com</span></li>
-                        <li><span>GitHub: pilg5971</span></li>
-                    </ul>
-                </div>
-            </div>    
-        </div>
+      <!-- Page Content -->
+      <div class="landing-container">
+        <div class="landing-content">
+          <div class="landing-intro">
+            <img class="paintbrush" src="./Images/Paintbrush.png" alt="">
+            <h1>Trevor Pilgrim</h1>
+          </div>
 
-        <!-- Footer -->
-        <Footer class="footer-root">
-            <div class="footer-container">
-                <div class="footer-item">
-                    <img src="" alt="">
-                </div>
-                <div class="footer-item"></div>
-                <div class="footer-item"></div>
-                <div class="footer-item"></div>
+          <div class="landing-details">
+            <h2>Creativity Amidst Website Development</h2>
+            <button
+            onclick="window.location.href='about.html'">Learn More</button>
+          </div>
+        </div>
+        
+        <div class="intro-cards">
+          <div class="carousel">
+            <button class="carousel__button 
+            carousel__button--left 
+            is-hidden">
+              <img src="./Images/ButtonArrowSmall.png" 
+              alt="Carousel-Button-Left">
+            </button>
+            <div class="carousel__track-container">
+              <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                  <img class="carousel__images" src="./Images/Image1.jpg"
+                   alt="Carousel-Card">
+                </li>
+                <li class="carousel__slide">
+                  <img class="carousel__images" src="./Images/Image2.jpg"
+                   alt="Carousel-Card">
+                </li>
+                <li class="carousel__slide">
+                  <img class="carousel__images" src="./Images/Image3.jpg"
+                   alt="Carousel-Card">
+                </li>    
+              </ul>
             </div>
-        </Footer>
+            <button class="carousel__button 
+            carousel__button--right">
+              <img src="./Images/ButtonArrowSmall.png" 
+              alt="Carousel-Button-Right"
+              style="-webkit-transform: scaleX(-1);
+              transform: scaleX(-1);">
+            </button>
+            <div class="carousel__nav">
+              <button class="carousel__indicator current-slide"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Information -->
+      <!-- <div class="profile-information">
+        <div class="profile-picture">
+          <img src="./Images/Profile.png" alt="Profile Picture">
+        </div>
+        <div class="profile-text">
+          <h2>Web Developer - Graphic Designer</h2>
+          <p class=background-description>
+              Computer Science major with a variety of skills and experience amid
+              the web industry. My focus is in the field of web development with
+              additional interests in UI/UX design, software development, and computer
+              graphics. Currently I work full-time as a Software Consultant within Fishbowl
+              Solutions.</p>
+          <div class="hobbies-contact">
+            <ul class="hobbies-passions">
+                <h3>Hobbies & Passions</h3>
+                <li>Graphic Design</li>
+                <li>Drawing</li>
+                <li>Video Games</li>
+                <li>Dungeon & Dragons</li>
+            </ul>
+            <ul class="contact-info">
+                <h3>Contact Information</h3>
+                <li><span>Phone Number: 630-442-4985</span></li>
+                <li><span>Email: clank555@gmail.com</span></li>
+                <li><span>GitHub: pilg5971</span></li>
+            </ul>
+          </div>
+        </div>     -->
+      </div>
 
     </body>
+
+    <!-- Footer -->
+    <!-- <Footer class="footer-root">
+      <div class="footer-container">
+        <div class="footer-item">
+            <img src="" alt="">
+        </div>
+        <div class="footer-item"></div>
+        <div class="footer-item"></div>
+        <div class="footer-item"></div>
+      </div>
+    </Footer> -->
+
+    <script src="./Javascript/carousel.js"></script>
 </html>
