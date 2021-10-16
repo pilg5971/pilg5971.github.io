@@ -1,122 +1,136 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Trevor Pilgrim: Home</title>
+      <title>Trevor Pilgrim</title>
       <meta charset="utf-8">
       <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
       <link rel="stylesheet" href="./css/style.css">
-      <link rel="stylesheet" href="./css/home.css">
+      <link rel="stylesheet" href="./css/about.css">
+      <link rel="stylesheet" href="./css/education&skills.css">
       <style>
           :root{
-              --dark-purple: #25274D;
-              --light-purple: #464866;
-              --light-gray: #AAABB8;
-              --light-blue: #2E9CCA;
-              --dark-blue: #29648A;
-              --gradient: linear-gradient(
-                  45deg,
-                  var(--dark-blue),
-                  var(--dark-purple)
-              );
+            --light-purple: #A5A6F6;
+            --medium-purple: #7879F1;
+            --section-gray: #E9E8E8;
           }
       </style>
     </head>
     <body>
 
       <!-- Navigation -->
-      <div class="nav-wrapper">
-        <div class="right-side">
-          <div class="brand"><a href="https://github.com/pilg5971" target="_blank">
-            <img src="./Images/GitHub-logo.png" alt="GitHub Link"></a>
-          </div>
+      <div class="desktop-navigation">
+        <div class="nav-left">
+          <div class="img-container">
+            <img src="./Images/Home/TwilightMole_PNG.png" alt="Twilight Mole Image"></div>
+          <div class="img-container">
+            <img src="./Images/Home/TwitchTv_PNG.png" alt="Twitch TV Link"></div>
+          <div class="img-container">
+            <img src="./Images/Home/Youtube_PNG.png" alt="Youtube Channel Link"></div>
         </div>
-        <div class="left-side">
-          <div class="nav-link-wrapper"><a href="index.html">Home</a></div>
-          <div class="nav-link-wrapper"><a href="about.html">About</a></div>
-          <div class="nav-link-wrapper"><a href="school.html">School</a></div>
-          <div class="nav-link-wrapper"><a href="projects.html">Projects</a></div>
-          <div class="nav-link-wrapper"><a href="graphicDesign.html">Graphic Design</a></div>
+        <div class="nav-right">
+          <div class="nav-link"><a href="">Home</a></div>
+          <div class="nav-link"><a href="">About</a></div>
+          <div class="nav-link"><a href="">School</a></div>
+          <div class="nav-link"><a href="">Projects</a></div>
+          <div class="nav-link"><a href="">Graphic Design</a></div>
         </div>
       </div>
 
       <!-- Landing Content -->
-      <div class="landing-container">
-        <div class="landing-content">
-          <div class="landing-intro">
-            <img class="paintbrush" src="./Images/Paintbrush.png" alt="">
+      <div class="landing-content">
+        <div class="column-left" id="column">
+          <div class="landing-text">
             <h1>Trevor Pilgrim</h1>
+            <p>Creativity Admist the Web Industry</p>
+            <button class="button-link">Contact Me</button>
+            <button class="button-link">Resume</button></div>
+        </div>
+        <div class="column-right" id="column">
+          <div class="landing-image">
+            <img src="./Images/Home/LandingProfilePicture.png" alt="Landing Profile Picture"></div>
+        </div>
+      </div>
+        
+      <!-- About Content -->
+      <div class="about-content">
+        <div class="row-top" id="about-row">
+          <h1>About Me</h1>
+          <p>Computer Science major with a variety of skills and experience amid the web industry. My focus is in the field of web development with additional interests in UI/UX design, software development, and computer graphics. Currently I work full-time as a Software Consultant at Fishbowl Solutions in St. Louis Park, MN.</p>
+        </div>
+        <div class="row-bottom" id="about-row">
+          <div class="card-slot">
+            <div class="content-card">
+              <img src="./Images/About/BaelfireLogo.png" alt="Baelfire eSports Logo" class="card-img">
+              <h1>Baelfire eSports</h1>
+              <p>Founder and Competitor</p>
+            </div>
           </div>
-
-          <div class="landing-details">
-            <h2>Creativity Amidst Website Development</h2>
+          <div class="card-slot">
+            <div class="content-card">
+              <img src="./Images/About/Paintbrush.png" alt="Paintbrush Image" class="card-img">
+              <h1>Graphic Designer</h1>
+              <p>Comissioned Artist</p>
+            </div>
+          </div>
+          <div class="card-slot">
+            <div class="content-card">
+              <img src="./Images/About/FishbowlLogo.jpg" alt="Fishbowl Solutions Logo" class="card-img">
+              <h1>Fishbowl Solutions</h1>
+              <p>Software Consultant</p>
+            </div>
+          </div>
+          <div class="card-slot">
+            <div class="content-card">
+              <img src="./Images/About/USTLogo.png" alt="UST eSports Logo" class="card-img">
+              <h1>St. Thomas eSports</h1>
+              <p>Board Member</p>
+            </div>
           </div>
         </div>
-        
-        <!-- Introduction Card(s) -->
-        <div class="intro-cards">
-          <div class="card">
-            <div class="thumbnail">
-              <img class="left" src="https://cdn2.hubspot.net/hubfs/322787/Mychefcom/images/BLOG/Header-Blog/photo-culinaire-pexels.jpg">  
-            </div>
-            <div class="right">
-              <h1>Web Developer - Graphic Designer</h1>
-              <div class="author"><img src="./Images/ProfileHeadshot.png">
-                <h2>Trevor Pilgrim</h2>
-              </div>
-              <div class="separator"></div>
-              <p>Computer Science major with a variety of skills and experience amid
-                the web industry. My focus is in the field of web development with
-                additional interests in UI/UX design, software development, and computer
-                graphics. Currently I work full-time as a Software Consultant within Fishbowl
-                Solutions.</p>
-            </div>
-            <h5>12</h5>
-            <h6>MARCH</h6>
-            <ul>
-              <li><i class="fa fa-eye fa-2x"></i></li>
-              <li><i class="fa fa-heart-o fa-2x"></i></li>
-              <li><i class="fa fa-envelope-o fa-2x"></i></li>
-              <li><i class="fa fa-share-alt fa-2x"></i></li>
-            </ul>
-            <div class="fab">
-              <i class="fa fa-arrow-down fa-3x"></i>
+      </div>  
+
+      <!-- Education Information -->
+      <div class="education-content">
+        <div class="column-left" id="education-col"></div>
+        <div class="column-right" id="education-col">
+          <div class="title-text">
+            <h1>Education & Skills</h1>
+            <h2>Bachelors Degree - Computer Science </h2>
+            <p>University of St. Thomas – St. Paul, MN May 2021
+              Bachelor of Science in Computer Science
+              Academics: GPA: 3.55
+              </p>
+          </div>
+          <div class="skill-content">
+            <div class="skill-row">
+              <img src="./Images/Education/HTML.svg" alt="HTML Logo" class="skill-img">
+              <img src="./Images/Education/CSS.png" alt="CSS Logo" class="skill-img">
+              <img src="./Images/Education/Javascript.png" alt="Javascript Logo" class="skill-img">
+              <img src="./Images/Education/Figma.svg" alt="Figma Logo" class="skill-img"></div>
+            <div class="skill-row">
+              <img src="./Images/Education/React.png" alt="React Logo" class="skill-img">
+              <img src="./Images/Education/VueJS.png" alt="Vue.js Logo" class="skill-img">
+              <img src="./Images/Education/AWS.png" alt="AWS Logo" class="skill-img">
+              <img src="./Images/Education/Inkscape.svg" alt="Inkscape Logo" class="skill-img"></div>
+          </div>
+          <div class="rowing-content">
+            <img src="./Images/Education/Rowing.jpg" alt="UST Rowing Logo">
+            <div class="rowing-text">
+              <h2>University of St. Thomas Rowing Team</h2>
+              <ul>
+                <li>Competed in collegiate level rowing regattas</li>
+                <li>Practiced 6 – 7 days a week throughout the school year to master rowing techniques and build team synergy</li>
+                <li>Volunteered at various charity organizations such as Feed My Starving Children</li>
+              </ul>
             </div>
           </div>
-        </div> 
-      </div>
-
-      <!-- Profile Information -->
-      <div class="profile-information">
-        <section class="profile-content-row">
-          <img src="./Images/BattlfyImage.png" alt="School Related Image" class="profile-row-img">
-          <ul class="profile-row-description">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-        <section class="profile-content-row">
-          <img src="./Images/Rowing.jpg" alt="School Related Image" class="profile-row-img">
-          <ul class="profile-row-description">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-        <section class="profile-content-row">
-          <img src="./Images/Rowing.jpg" alt="School Related Image" class="profile-row-img">
-          <ul class="profile-row-description">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section> 
+        </div>
       </div>
 
       <!-- Carousel -->
-      <div class="carousel">
+      <!-- <div class="carousel">
         <button class="carousel__button 
         carousel__button--left 
         is-hidden">
@@ -151,11 +165,11 @@
           <button class="carousel__indicator"></button>
           <button class="carousel__indicator"></button>
         </div>
-      </div>
+      </div> -->
     </body>
 
     <!-- Footer -->
-    <Footer class="footer-root">
+    <!-- <Footer class="footer-root">
       <div class="footer-container">
         <div class="footer-item">
             <img src="" alt="">
@@ -164,7 +178,7 @@
         <div class="footer-item"></div>
         <div class="footer-item"></div>
       </div>
-    </Footer>
+    </Footer> -->
 
     <script src="./Javascript/carousel.js"></script>
 </html>

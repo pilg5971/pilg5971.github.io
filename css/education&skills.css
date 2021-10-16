@@ -1,0 +1,52 @@
+/* -------------------------------------------------------- */
+/*                                                          */
+/*                                                          */
+/*                  [EDUCATION SECTION]                     */
+/*                                                          */
+/*                                                          */
+/* -------------------------------------------------------- */
+
+/* ------------------------- */
+/*                           */
+/*     Education Content     */
+/*                           */
+/* ------------------------- */
+.education-content{
+    width: 100%;
+    height: 1080px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    background: url("../Images/Education/EducationBackground.jpg") no-repeat center center;
+}
+
+#education-col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.title-text, .skill-content, .rowing-content{
+    height: 33.33%;
+}
+
+.education-content .column-right{
+    background-color: #A027B4CC;
+}
+
+.education-content .skill-content img{
+    height: 120px;
+    width: auto;
+}
+
+.education-content .rowing-content{
+    display: flex;
+    flex-direction: row;
+}
+.education-content .rowing-content img{
+    height: 170px;
+}
+
+.education-content .rowing-text{
+    display: flex;
+    flex-direction: column;
+}
