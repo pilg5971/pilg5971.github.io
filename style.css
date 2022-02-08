@@ -1,0 +1,173 @@
+/* Index.html */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url("Images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.box{
+    width: 450px;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.box h1{
+    font-size: 40px;
+    font-weight: 25;
+}
+
+.box h5{
+    font-size: 25px;
+    font-weight: 25;
+}
+
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px
+}
+
+.left-side{
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div{
+    margin-bottom: 20px;
+    margin-right: 35px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    font-family: "Lato", sans-serif;
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid rgb(240, 236, 236);
+}
+
+.nav-link-wrapper a:hover{
+    color: rgb(240, 236, 236);
+}
+
+.brand{
+    filter: invert(100%);
+    transition: filter 0.5s;
+}
+
+.brand:hover{
+    filter: invert(50%);
+}
+
+/* About Page */
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+    width: 500px;
+    height: auto;
+    border-radius: 25%;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-text-wrapper{
+    width: 450px;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.profile-content-wrapper{
+    display: block;
+}
+
+/* School Page */
+
+.school-wrapper{
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.school-wrapper > header > a{
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: color 0.5s;
+}
+
+.school-wrapper > header > a:hover{
+    transition: color 0.5;
+    color: rgb(110, 109, 109);
+    font-weight: bolder;
+}
+
+.eSports-content{
+    display: flex;
+    text-align: start;
+}
+
+.eSports-content > img{
+    width: 226px;
+    height: 226px;
+    margin-bottom: 40px;
+}
+
+.rowing-content{
+    display: flex;
+    text-align: start;
+    margin-left: 23px;
+}
+
+.rowing-content > img{
+    margin-left: 5px;
+}
+
+.rowing-content > ul{
+    margin-left: 25px;
+}
