@@ -12,37 +12,20 @@
 /*                           */
 /* ------------------------- */
 
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Sora&display=swap);
 
 /* ------------------------- */
 /*                           */
-/*        Page Layout        */
+/*       Root Variables      */
 /*                           */
 /* ------------------------- */
-html{
-  max-width: 1920px;
-  background-color: rgb(192, 192, 192);
-  margin: auto;
-  height: fit-content;
-}
-body{
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Roboto', sans-serif;
-  overflow-y: scroll;
-}
-body::-webkit-scrollbar{
-  display: none;
-}
-h1{
-  margin: 0;
-  font-weight: bold;
-  font-size: 72px;
-}
-p{
-  margin: 0;
-  font-weight: normal;
-  font-size: 36px;
+
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        var(--dark-blue),
+        var(--dark-purple)
+    )
 }
 
 /* ------------------------- */
@@ -50,199 +33,95 @@ p{
 /*        Navigation         */
 /*                           */
 /* ------------------------- */
-.desktop-navigation{
-  display: flex;
-  justify-content: space-between;
-  height: 70px;
-  width: 100%;
-  background-color: white;
+.nav-wrapper{
+    background-image: var(--gradient);
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
 }
 
-.desktop-navigation .nav-left{
-  display:flex;
-  flex-direction: row;
-}
-.img-container{
-  height: 100%;
-  margin-left: 30px;
-}
-.nav-left img{
-  height: 80%;
-  width: auto;
-  padding: 5px;
+.left-side,
+.right-side{
+    display: flex;
 }
 
-.desktop-navigation .nav-right{
-  display:flex;
-  flex-direction: row;
-}
-.nav-right .nav-link{
-  height: fit-content;
-  margin: auto;
-  margin-right: 90px;
-}
-.nav-link a{
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 24px;
-  transition: all 0.2s ease-in-out;
-}
-.nav-link a:hover{
-  color: rgb(112, 1, 112);
+.right-side{
+    align-items: center;
 }
 
-/* ------------------------- */
-/*                           */
-/*       Landing Page        */
-/*                           */
-/* ------------------------- */
-.landing-content {
-  width: 100%;
-  height: 1030px;
-  background: url("../Images/Home/LandingPageBackground.png") no-repeat center center;
-  -webkit-background-size: 1920px 1050px;
-  -moz-background-size: 1920px 1050px;
-  -o-background-size: 1920px 1050px;
-  background-size: 1920px 1030px;
-  display: flex;
-  flex-direction: row;
+.nav-wrapper .left-side .nav-link-wrapper{
+    font-size: 0.9em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 120px;
 }
 
-#column{
-  height: 1030px;
-  display: flex;
+.nav-link-wrapper{
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+    font-family: 'Sora', sans-serif;
 }
 
-.column-left{
-  width: 45%;
-  justify-content: flex-end;
-}
-.landing-text{
-  color: white;
-  margin: auto 0;
-  margin-top: 200px;
-  letter-spacing: 1.5px;
-}
-.landing-text .button-link{
-  border: 0;
-  background-color: var(--medium-purple);
-  width: 245px;
-  height: 80px;
-  font-size: 36px;
-  font-family: inherit;
-  font-weight: bold;
-  color: white;
-  border-radius: 6px;
-  margin-top: 60px;
-  margin-right: 40px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.2s ease-in-out;
-}
-.landing-text .button-link:hover{
-  background-color: var(--light-purple);
-}
-.landing-text p{
-  margin-top: 10px;
+.nav-link-wrapper a{
+    color: whitesmoke;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.5s;
+    width: 100%;
+    text-align: center;
 }
 
-.column-right{
-  width: 55%;
-  justify-content: center;
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid rgb(240, 236, 236);
+    background-color: var(--dark-blue);
 }
-.landing-image{
-  overflow: hidden;
+
+.nav-link-wrapper a:hover{
+    color: rgb(240, 236, 236);
 }
-.column-right img{
-  height: 100%;
+
+.brand{
+    filter: invert(100%);
+    transition: filter 0.5s;
+}
+
+.brand:hover{
+    filter: invert(50%);
+}
+
+.brand a img{
+    width: 47.5px;
+    height: 40px;
 }
 
 /* ------------------------- */
 /*                           */
-/*         Carousel          */
+/*        Page Layout        */
 /*                           */
 /* ------------------------- */
-.carousel{
-  position: relative;
-  height: fit-content;
-  width: 100%;
-  margin: 0 auto 85px auto;
-  background-color: Var(--dark-blue);
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url("../Images/background2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Sora', sans-serif;;
 }
 
-.carousel__images{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+/* ------------------------- */
+/*                           */
+/*          Footer           */
+/*                           */
+/* ------------------------- */
 
-.carousel__track-container{
-  /* background: lightblue; */
-  height: 500px;
-  width: 700px;
-  margin: auto;
-  padding-top: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel__track{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  height: 100%;
-  transition: transform 250ms ease-in;
-}
-
-.carousel__slide{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.carousel__button{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-
-.carousel__button--left{
-  left: 40px;
-}
-
-.carousel__button--right{
-  right: 40px;
-}
-
-.carousel__button img{
-  width: 10px;
-}
-
-.carousel__nav{
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.carousel__indicator{
-  border: 0;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background: rgba(0, 0, 0, 0.3);
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.carousel__indicator.current-slide{
-  background: rgba(0, 0, 0, 0.75);
-}
-
-.is-hidden{
-  display: none;
+.footer-root{
+    width: 100%;
+    height: 250px;
+    background: var(--dark-purple);
+    margin-top: 50px;
 }

@@ -1,73 +1,39 @@
 /* -------------------------------------------------------- */
 /*                                                          */
 /*                                                          */
-/*                    [ABOUT SECTION]                       */
+/*                       [ABOUT PAGE]                       */
 /*                                                          */
 /*                                                          */
 /* -------------------------------------------------------- */
 
-/* ------------------------- */
-/*                           */
-/*       About Content       */
-/*                           */
-/* ------------------------- */
-.about-content{
-    width: 100%;
-    height: 1080px;
-    background-color: var(--section-gray);
-    display: flex;
-    flex-direction: column;
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#about-row{
-    width: 100%;
-    height: 50%;
-}
-
-.row-top{
-    margin: auto;
-}
-.row-top h1, .row-top p{
-    color: black;
-    width: fit-content;
-    margin: 50px auto;
-}
-.row-top p{
-    width: 70%;
-    text-align: center;
-    line-height: 70px;
-}
-
-.row-bottom{
-    display: flex;
-    flex-direction: row;
-}
-.row-bottom .card-slot{
-    width: 25%;
+.profile-image-wrapper img{
+    width: 500px;
     height: auto;
-    /* background-color: black; */
+    border-radius: 25%;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.content-card{
-    background-color: white;
-    width: 360px;
-    height: 430px;
+
+.profile-text-wrapper{
+    width: 450px;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    text-align: center;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    border-radius: 11px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
 }
-.content-card img{
-    width: auto;
-    height: 240px;
-    margin: auto;
-}
-.content-card h1, .content-card p{
-    font-size: 30px;
-    width: fit-content;
-    margin: auto;
-}
-.content-card h1{
-    margin-bottom: 0;
+
+.profile-content-wrapper{
+    display: block;
 }
