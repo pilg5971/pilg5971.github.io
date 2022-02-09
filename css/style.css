@@ -1,9 +1,10 @@
-/* Index.html */
-
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                                    HOME                                  */
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 body{
-    margin: 0px;
-    padding: 0px;
-    background: url("Images/background.jpg") no-repeat center center fixed;
+  margin: 0;
+  padding: 0;
+  background: url("../resources/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,9 +17,10 @@ body{
     padding: 40px;
     text-align: center;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 12rem;
     color: white;
     font-family: 'Lato', sans-serif;
+    line-height: initial;
 }
 
 .box h1{
@@ -36,28 +38,37 @@ body{
     width: 200px;
     height: 200px;
     object-fit: cover;
+    object-position: center -30px;
 }
 
+/* ===================== */
+/*       NAVIGATION      */
+/* ===================== */
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 38px
+    padding: 1rem;
+    position: sticky;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.5);
 }
 
-.left-side{
-    display: flex;
+.right-side{
+  display: flex;
+  margin: auto 0;
 }
 
-.nav-wrapper > .left-side > div{
-    margin-bottom: 20px;
-    margin-right: 35px;
+.nav-wrapper > .right-side > div{
+    margin-right: 2.5rem;
     font-size: 0.9em;
     text-transform: uppercase;
 }
 
+.nav-end{
+  margin-right: 0px !important;
+}
+
 .nav-link-wrapper{
-    height: 22px;
-    border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
     font-family: "Lato", sans-serif;
 }
@@ -82,15 +93,22 @@ body{
     transition: filter 0.5s;
 }
 
+.brand img{
+  height: 50px;
+  width: auto;
+}
+
 .brand:hover{
     filter: invert(50%);
 }
 
-/* About Page */
-
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                                    ABOUT                                 */
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .two-column-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
 }
 
 .profile-image-wrapper img{
@@ -120,8 +138,9 @@ body{
     display: block;
 }
 
-/* School Page */
-
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                                   SCHOOL                                 */
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .school-wrapper{
     width: 80%;
     background: rgba(0,0,0,0.5);
