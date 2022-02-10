@@ -11,36 +11,6 @@ body{
     background-size: cover;
 }
 
-.box{
-    width: 450px;
-    background: rgba(0,0,0,0.5);
-    padding: 40px;
-    text-align: center;
-    margin: auto;
-    margin-top: 12rem;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    line-height: initial;
-}
-
-.box h1{
-    font-size: 40px;
-    font-weight: 25;
-}
-
-.box h5{
-    font-size: 25px;
-    font-weight: 25;
-}
-
-.box-img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: center -30px;
-}
-
 /* ===================== */
 /*       NAVIGATION      */
 /* ===================== */
@@ -50,7 +20,7 @@ body{
     padding: 1rem;
     position: sticky;
     z-index: 3;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .right-side{
