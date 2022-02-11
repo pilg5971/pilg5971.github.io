@@ -6,7 +6,7 @@ body {
   height: 100%;
   margin: 0;
   margin-top: -1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background: linear-gradient(to bottom, #202020, #111119); */
   background: url("../resources/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
